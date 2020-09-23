@@ -4,6 +4,7 @@ import Models.post
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.example.postapp.R
 
 class PostsAdapter (
@@ -12,7 +13,7 @@ class PostsAdapter (
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = PostsViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.row_item_posts, parent, false)
+        LayoutInflater.from(parent.context).inflate(R.layout.row_item, parent, false)
     )
 
     override fun getItemCount() = posts.size
@@ -28,4 +29,5 @@ class PostsAdapter (
 
     inner class PostsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }
+
 

@@ -17,4 +17,7 @@ class postsViewModel {
             }
         }
     }
+    fun getDBpost(){
+        postLiveData=postRespository.get
+    }
 }
